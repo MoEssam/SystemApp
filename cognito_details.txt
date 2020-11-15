@@ -1,3 +1,0 @@
-Pool Id us-east-1_9b7nz49jI
-Pool ARN arn:aws:cognito-idp:us-east-1:765896736132:userpool/us-east-1_9b7nz49jI
-App clients loginsystem-app
