@@ -21,6 +21,7 @@ router.post('/signup', (req, res) => {
     const email = req.body.email
     const password = req.body.password
     const name = req.body.name
+    const family_name = req.body.family_name
     const gender = req.body.gender
     const birthdate = req.body.birthdate
     const address = req.body.address
@@ -29,6 +30,7 @@ router.post('/signup', (req, res) => {
     const attributeList = [];
     attributeList.push(new AmazonCognitoIdentity.CognitoUserAttribute({ Name: "email", Value: email }));
     attributeList.push(new AmazonCognitoIdentity.CognitoUserAttribute({ Name: "name", Value: name }));
+    attributeList.push(new AmazonCognitoIdentity.CognitoUserAttribute({ Name: "family_name", Value: family_name }));
     attributeList.push(new AmazonCognitoIdentity.CognitoUserAttribute({ Name: "gender", Value: gender }));
     attributeList.push(new AmazonCognitoIdentity.CognitoUserAttribute({ Name: "birthdate", Value: birthdate }));
     attributeList.push(new AmazonCognitoIdentity.CognitoUserAttribute({ Name: "address", Value: address }));
