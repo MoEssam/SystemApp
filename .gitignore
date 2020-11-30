@@ -1,3 +1,7 @@
 node_modules
 *.txt
+<<<<<<< HEAD
 .env
+=======
+*.env
+>>>>>>> 1b586a121f83e29b4da412cb7c8207a6b79a39b5
